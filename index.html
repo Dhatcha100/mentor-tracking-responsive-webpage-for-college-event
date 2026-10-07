@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>College Event</title>
+    <style>
+
+#banner{
+text-align:center;
+color:white;
+background-color:blue;
+}
+
+#main {
+
+display:flex;
+gap:20px;
+}
+
+.card
+{
+width:45%;
+border: 2px solid blue;
+border-radius:30px;
+}
+
+.card h1 {
+color:blue;
+}
+
+.card button{
+margin-left:35px;
+background-color:blue;
+border-radius:30px;
+animation-name:large;
+animation-duration:2s;
+animation-iteration-count:infinite;
+}
+
+
+@keyframes large
+{
+from
+{
+transform:scale(1);
+background-color:lime;
+}
+to
+{
+transform:scale(1.5);
+background-color:green;
+
+}
+}
+
+
+@media screen and (max-width:600px)
+{
+#main{
+flex-direction:column;
+}
+
+.card {
+padding:20px;
+width:90%;
+}
+}
+  </style>
+</head>
+
+<body>
+
+<div id="banner">
+<h1>ABC University</h1>
+<h2>competetion conducted</h2>
+<p>technical | no technical</p>
+</div>
+
+<div id="main">
+
+<div class="card">
+<h1>competiotion</h1>
+<h3>singing</h3>
+<h3>dancing </h3>
+<h3>coding</h3>
+<h3>writing</h3>
+<h3>drawing</h3>
+</div>
+
+<div class="card">
+<h1>Registration</h1>
+<p>hsdsdscjsd jsdhdsjjs shbdjsbd shdbshd hdbjfbdj</p>
+<button >Register</button>
+</div>
+
+</div>    
+</body>
+
+</html>
